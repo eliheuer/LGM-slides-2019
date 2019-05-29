@@ -36,17 +36,40 @@ image("source/images/cli-01.png", (-19, 0), alpha=1)
 fill(1)
 stroke(None)
 fontSize(120)
-#tracking(-4.5)
+tracking(-5)
 text("FONT BAKERY", M+96, M*20)
-fontSize(49.5)
-#tracking(-2.5)
-text("Quality Assurance for Font Families", M+96, M*18)
+fontSize(40)
+tracking(-1)
+text("Quality Assurance for Font Families", M+170, M*18)
 saveImage("fontbakery-00.png")
 
 # PAGE ONE #####################################################################
 newPage(W, H)
-grid() # Toggle for grid view
-edge() # Toggle for safe area
+fill(0.1)
+rect(0, 0, W, H)
+#grid() # Toggle for grid view
+#edge() # Toggle for safe area
+#text("Foo Bard", M, M*16)
+image("source/images/cli-03.png", (65, -10), alpha=1)
+saveImage("fontbakery-01.png")
+
+# PAGE TWO #####################################################################
+newPage(W, H)
+fill(0.1)
+rect(0, 0, W, H)
+#grid() # Toggle for grid view
+#edge() # Toggle for safe area
+text("Foo Bard", M, M*16)
+image("source/images/web-01.png", (-15, -30), alpha=1)
+saveImage("fontbakery-02.png")
+
+# PAGE THREE ###################################################################
+newPage(W, H)
+fill(0.1)
+rect(0, 0, W, H)
+#grid() # Toggle for grid view
+#edge() # Toggle for safe area
 text("Foo Bard", M, M*16)
 image("source/images/cli-02.png", (-19, 0), alpha=1)
-saveImage("fontbakery-01.png")
+saveImage("fontbakery-03.png")
+
