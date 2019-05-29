@@ -22,27 +22,31 @@ def grid():
         polygon((M, M+stpY), (W-M, M+stpY))
         stpY += incY
 
-# PAGE ONE #####################################################################
+# PAGE ZERO ####################################################################
 newPage(W, H)
 fill(0.1)
 rect(0, 0, W, H)
-font("source/fonts/Blob-Black.ttf")  # Set the font
+#font("source/fonts/Inter-Black.ttf")  # Set the font
+font("Optima Bold")  # Set the font
 #grid() # Toggle for grid view
 #edge() # Toggle for safe area
 
-image("source/images/cli-01.png", (-19, -25), alpha=1)
+image("source/images/cli-01.png", (-19, 0), alpha=1)
 
 fill(1)
 stroke(None)
-fontSize(202)
-text("FONT BAKERY", M, M*18)
-fontSize(69)
+fontSize(120)
+#tracking(-4.5)
+text("FONT BAKERY", M+96, M*20)
+fontSize(49.5)
 #tracking(-2.5)
-text("QUALITY ASSUrANCE FOr FONT FAMILIES", M, M*16)
+text("Quality Assurance for Font Families", M+96, M*18)
+saveImage("fontbakery-00.png")
 
-saveImage("fontbakery-01.png")
-
-# PAGE TWO #####################################################################
+# PAGE ONE #####################################################################
 newPage(W, H)
-image("source/images/cli-01.png", (-50, 0), alpha=1)
-saveImage("fontbakery-02.png")
+grid() # Toggle for grid view
+edge() # Toggle for safe area
+text("Foo Bard", M, M*16)
+image("source/images/cli-02.png", (-19, 0), alpha=1)
+saveImage("fontbakery-01.png")
